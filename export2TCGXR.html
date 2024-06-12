@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-Compatible"
+			content="ie=edge"> 
+	<title>TCGXR Import Example</title>
+</head> 
+
+<body> 
+	<h1>Export 2 TCGXR Example</h1>
+	Developer Secret:
+	<input style="width:30%" type="text" id="DeveloperSecret" value="">
+	<br>
+	Custom TCGXR ID:
+	<input style="width:30%" type="text" id="CustomId" value="">
+	<br>
+	Game Acronym:
+	<select id="GameAcronym" onchange="OnGameAcronymChanged()">
+		<option value="GATCG">GATCG</option>
+		<option value="MTGTCG">MTGTCG</option>
+		<option value="YGOTCG">YGOTCG</option>
+	</select>
+	<br>
+	Deck Name:
+	<input style="width:30%" type="text" id="DeckName" value="have-look-first">
+	<br>
+	<textarea style="overflow:auto;width:30%" rows="30" id="Deck"></textarea>
+	<br>
+    <input type="button" class="myButton" onclick="OnImportClicked()" value="Export2TCGXR">
+
+	<!-- Including library.js and app.js -->
+	<script src="export2TCGXR.js"></script> 
+</body> 
+
+</html> 
